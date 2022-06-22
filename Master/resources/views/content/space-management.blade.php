@@ -18,7 +18,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img class="img-fluid" src="storage/app/public/logo.png" alt="" style="width:
+        <a class="navbar-brand" href="/"><img class="img-fluid" src="../../../storage/app/public/logo.png" alt="" style="width:
         200px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
         </div>
     </div>
 </nav>
- 
+
 </body>
 <body style="background-color: #e5e5e5;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -53,7 +53,7 @@
         }
     </style>
   <div class="container" style="margin-top: 25vh;">
-      
+
        <table class="table table-striped table-hover">
         <thead>
           <tr class="titles">
@@ -64,7 +64,7 @@
           </tr>
         </thead>
         <tbody class="content">
-            
+
           <tr>
             <th scope="row">1</th>
             <td>Chicken Breast</td>
@@ -112,7 +112,7 @@ Add item(s)
     <div class="modal-header">
       <h5 class="modal-title" id="staticBackdropLabel">Add item(s)</h5>
        <!-- Search Bar -->
-       
+
        <div class="input-group rounded" style="padding-left: 150px;">
         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
         <span class="input-group-text border-0" id="search-addon">
@@ -122,7 +122,7 @@ Add item(s)
 
 
       <!-- Add Meat -->
-        
+
 
     </div>
     <div class="modal-footer">

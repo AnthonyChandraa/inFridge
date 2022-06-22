@@ -20,3 +20,7 @@ Route::group( ['prefix' => 'auth'] ,function () {
     Route::post('login', [UserController::class, 'login'])->name('login');
     Route::post('register', [UserController::class, 'register'])->name('register');
 });
+
+Route::get('/test', function() {
+    return view('landing.start');
+});
