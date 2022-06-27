@@ -10,6 +10,8 @@ class Recipe extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $keyType = 'string';
+
     public function user(){
         return $this->belongsTo(User::class);
     }

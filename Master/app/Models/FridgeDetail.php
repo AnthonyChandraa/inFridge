@@ -10,6 +10,8 @@ class FridgeDetail extends Model
 {
     use HasFactory,SoftDeletes;
 
+    protected $keyType = 'string';
+
     public function fridge(){
         return $this->belongsTo(Fridge::class);
     }

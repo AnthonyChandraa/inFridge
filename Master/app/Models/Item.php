@@ -10,6 +10,9 @@ class Item extends Model
 {
     use HasFactory, SoftDeletes;
 
+
+    protected $keyType = 'string';
+
     public function fridgeDetail(){
         return $this->hasMany(FridgeDetail::class);
     }

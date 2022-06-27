@@ -16,12 +16,11 @@
 color: #0F225E">Fridge</p>
             </div>
             <div class="d-flex justify-content-center">
-                <a href="" id="btn-start" style="font-family: 'Poppins', sans-serif"><button
+                <a href="/dashboard" style="font-family: 'Poppins', sans-serif"><button id="btn-start"
                         style="width: 100px; border-radius: 45px; padding: 10px; border: 2px solid
                         #0F225E; background-color: transparent;">Start</button></a>
             </div>
         </div>
     </div>
 </div>
-
 @endsection()

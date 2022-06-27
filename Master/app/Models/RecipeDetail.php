@@ -10,6 +10,8 @@ class RecipeDetail extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $keyType = 'string';
+
     public function recipe(){
         return $this->belongsTo(Recipe::class);
     }

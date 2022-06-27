@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Fridge;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -42,13 +43,20 @@ class UserController extends Controller
             'conf-password.same' => 'Password Mismatch',
 
         ]);
+        $userID = Str::random(32);
 
         $user= new User();
-        $user->id=Str::random(32);
+        $user->id=$userID;
         $user->name=$request->input('name');
         $user->email=$request->input('email');
         $user->password=Hash::make($request->input('password'));
         $user->save();
+
+        $fridge = new Fridge();
+        $fridge->id=Str::uuid();
+        $fridge->user_id=$userID;
+        $fridge->capacity=30;
+        $fridge->save();
 
         return redirect()->route('login_page');
     }
